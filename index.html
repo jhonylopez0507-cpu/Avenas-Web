@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Avenas Trasnochadas: avena preparada la noche anterior, entregada fresca en Smart Fit Tepozanes. Pide tu individual o suscríbete al plan semanal."
+    />
+    <title>Avenas Trasnochadas - Pedidos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <a href="#inicio" class="logo">
+        <span class="logo-icono">🥣</span>
+        Avenas Trasnochadas
+      </a>
+
+      <div class="nav-derecha">
+        <button class="btn-carrito" id="btnCarrito" aria-label="Ver carrito">
+          🛒
+          <span class="carrito-contador" id="carritoContador">0</span>
+        </button>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#clasicas">Menú</a>
+        <a href="#suscripciones">Suscripciones</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero-cafe" id="inicio">
+      <div class="hero-texto">
+        <span class="subtitulo-destacado">Nutrición premium</span>
+        <h1>Avena que <em>rinde</em>, no que sobra</h1>
+        <p class="hero-parrafo">
+          Preparamos tu avena la noche anterior con fruta fresca y toppings
+          reales. La recoges o te la llevamos directo a Smart Fit Tepozanes,
+          lista para después de entrenar.
+        </p>
+        <a href="#clasicas" class="btn-hero-cafe">Pedir ahora</a>
+      </div>
+
+      <div class="hero-imagen">
+        <img
+          src="img/DespertadorMoka1.jpeg"
+          alt="Avena Despertador Moka"
+          class="img-flotante-gigante"
+        />
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== SOBRE NOSOTROS ===== -->
+      <section id="nosotros" class="seccion-nosotros">
+        <div class="nosotros-texto">
+          <span class="subtitulo-destacado">Sobre nosotros</span>
+          <h2>Avena preparada la noche anterior, lista cuando tú llegas</h2>
+          <p>
+            "Trasnochada" es justamente eso: dejamos la avena reposando toda la
+            noche en leche o bebida vegetal para que absorba sabor y textura
+            cremosa, y por la mañana solo le agregamos fruta fresca, frutos
+            secos y toppings al momento. Nada de sobres instantáneos ni azúcar
+            añadida de más.
+          </p>
+          <ul class="lista-check">
+            <li>Preparación diaria, nunca de más de 24 horas</li>
+            <li>Ingredientes frescos de temporada</li>
+            <li>Frascos de vidrio reutilizables (Eco-Swap)</li>
+          </ul>
+        </div>
+        <div class="nosotros-imagen">
+          <img src="img/FrutosRojos1.jpeg" alt="Avena de frutos rojos" />
+        </div>
+      </section>
+
+      <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+      <section class="seccion-features">
+        <span class="subtitulo-destacado centrado">Por qué elegirnos</span>
+        <h2 class="centrado">Lo que te llevas en cada pedido</h2>
+
+        <div class="grid-features">
+          <article class="tarjeta-feature">
+            <span class="icono-feature">🌾</span>
+            <h3>Ingredientes frescos</h3>
+            <p>Fruta y toppings comprados y porcionados el mismo día.</p>
+          </article>
+          <article class="tarjeta-feature">
+            <span class="icono-feature">🏋️</span>
+            <h3>Entrega en tu gym</h3>
+            <p>Recíbela directo en Smart Fit Tepozanes, sin desviarte.</p>
+          </article>
+          <article class="tarjeta-feature">
+            <span class="icono-feature">♻️</span>
+            <h3>Frascos reutilizables</h3>
+            <p>Regresa tu frasco limpio y obtén descuento Eco-Swap.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== MENÚ ===== -->
+      <section id="sabores">
+        <span class="subtitulo-destacado centrado">Nuestro menú</span>
+        <h2 id="clasicas" class="titulo-categoria">Clásicas</h2>
+        <div class="grid-productos">
+          <article class="tarjeta">
+            <img
+              src="img/Manzana1.jpeg"
+              alt="Avena Manzana Canela"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Manzana Canela</h3>
+              <p>Manzana en cubos, canela en polvo y nuez picada.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Manzana Canela', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/Platano1.jpeg"
+              alt="Avena Choco-Plátano"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Choco-Plátano Cacahuate</h3>
+              <p>Cacao en polvo, rodajas de plátano y crema de cacahuate.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="
+                    agregarAvenaAlCarrito(this, 'Choco-Plátano Cacahuate', 75)
+                  "
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/DuraznoConAlmendra1.jpeg"
+              alt="Avena Durazno con Almendras"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Durazno con Almendras</h3>
+              <p>Duraznos picados y almendra fileteada.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="
+                    agregarAvenaAlCarrito(this, 'Durazno con Almendras', 75)
+                  "
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h2 id="postres" class="titulo-categoria">Postres</h2>
+        <div class="grid-productos">
+          <article class="tarjeta">
+            <img
+              src="img/PayDeLimon1.jpeg"
+              alt="Avena Pay de Limón"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Pay de Limón</h3>
+              <p>
+                Jugo y ralladura de limón en la base, galleta María triturada
+                encima.
+              </p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Pay de Limón', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/CarrotCake.jpeg"
+              alt="Avena Carrot Cake"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Carrot Cake</h3>
+              <p>Zanahoria finamente rallada, pasitas, canela y nuez.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Carrot Cake', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/DespertadorMoka1.jpeg"
+              alt="Avena Despertador Moka"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Despertador Moka</h3>
+              <p>
+                Café soluble concentrado, cacao y chispas de chocolate amargo.
+              </p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Despertador Moka', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h2 id="refrescantes" class="titulo-categoria">Refrescantes</h2>
+        <div class="grid-productos">
+          <article class="tarjeta">
+            <img
+              src="img/FrutosRojos1.jpeg"
+              alt="Avena Frutos Rojos"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Frutos Rojos</h3>
+              <p>Fresas, zarzamoras o moras azules con un toque de chía.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Frutos Rojos', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/MangoTropical1.jpeg"
+              alt="Avena Mango Tropical"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Mango Tropical</h3>
+              <p>Mango fresco en cubos y coco rallado seco.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Mango Tropical', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/PiñaColada1.jpeg"
+              alt="Avena Piña Colada"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Piña Colada</h3>
+              <p>Trozos de piña fresca y coco rallado.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Piña Colada', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img
+              src="img/MatchaFresa1.jpeg"
+              alt="Avena Matcha Fresa"
+              class="img-producto"
+              loading="lazy"
+            />
+            <div class="tarjeta-info">
+              <h3>Matcha Fresa</h3>
+              <p>Té matcha en polvo en la base y fresas rebanadas arriba.</p>
+              <div class="extras">
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Proteína"
+                    data-precio="25"
+                  />
+                  Proteína (+$25)</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    data-extra="Creatina"
+                    data-precio="15"
+                  />
+                  Creatina (+$15)</label
+                >
+              </div>
+              <div class="tarjeta-footer">
+                <span class="precio">$75</span>
+                <button
+                  class="btn-agregar"
+                  onclick="agregarAvenaAlCarrito(this, 'Matcha Fresa', 75)"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== SUSCRIPCIONES (estilo franja "reservación") ===== -->
+      <section id="suscripciones" class="franja-plan">
+        <div class="plan-texto">
+          <span class="subtitulo-destacado">Plan semanal</span>
+          <h2>5 avenas, un solo pedido</h2>
+          <p>
+            Arma tu semana completa y ahorra. Renueva con tus frascos limpios y
+            obtén precio Eco-Swap.
+          </p>
+          <div class="extras">
+            <label
+              ><input
+                type="checkbox"
+                id="planExtraProteina"
+                data-extra="Proteína (promo 5x4)"
+                data-precio="100"
+              />
+              Proteína en los 5 frascos · Promo 5x4: +$100</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                id="planExtraCreatina"
+                data-extra="Creatina (promo 5x4)"
+                data-precio="60"
+              />
+              Creatina en los 5 frascos · Promo 5x4: +$60</label
+            >
+          </div>
+          <div class="plan-botones">
+            <button
+              class="btn-plan"
+              onclick="
+                agregarPlanAlCarrito(this, 'Suscripción nueva (5 frascos)', 350)
+              "
+            >
+              Cliente nuevo · $350 MXN
+            </button>
+            <button
+              class="btn-plan btn-plan-eco"
+              onclick="
+                agregarPlanAlCarrito(
+                  this,
+                  'Renovación Eco-Swap (5 frascos)',
+                  315,
+                )
+              "
+            >
+              Renovación Eco-Swap · $315 MXN
+            </button>
+          </div>
+        </div>
+        <div class="plan-imagen">
+          <img
+            src="img/PiñaColada1.jpeg"
+            alt="Frascos de avena listos para entrega"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contacto" class="footer-cafe">
+      <div class="footer-col">
+        <a href="#inicio" class="logo">
+          <span class="logo-icono">🥣</span>
+          Avenas Trasnochadas
+        </a>
+        <p>Avena preparada la noche anterior, fresca cada mañana.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Acceso rápido</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#clasicas">Menú</a>
+        <a href="#suscripciones">Suscripciones</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horario de entrega</h4>
+        <p>Lunes a viernes: 6:00 am – 9:00 am</p>
+        <p>Punto de entrega: Smart Fit Tepozanes</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Galería</h4>
+        <div class="footer-galeria">
+          <img src="img/Manzana1.jpeg" alt="" loading="lazy" />
+          <img src="img/CarrotCake.jpeg" alt="" loading="lazy" />
+          <img src="img/MangoTropical1.jpeg" alt="" loading="lazy" />
+          <img src="img/MatchaFresa1.jpeg" alt="" loading="lazy" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== CARRITO ===== -->
+    <div class="carrito-overlay" id="carritoOverlay"></div>
+    <aside class="carrito-panel" id="carritoPanel" aria-hidden="true">
+      <div class="carrito-header">
+        <h3>Tu pedido</h3>
+        <button
+          class="cerrar-carrito"
+          id="cerrarCarrito"
+          aria-label="Cerrar carrito"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="carrito-items" id="carritoItems">
+        <p class="carrito-vacio" id="carritoVacio">Todavía no agregas nada.</p>
+      </div>
+
+      <div class="carrito-footer">
+        <div class="carrito-total">
+          <span>Total</span>
+          <span id="carritoTotal">$0</span>
+        </div>
+        <button class="btn-vaciar" id="btnVaciar">Vaciar carrito</button>
+        <button class="btn-enviar-pedido" id="btnEnviarPedido">
+          Enviar pedido por WhatsApp
+        </button>
+      </div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>

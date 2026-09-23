@@ -1,0 +1,16 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Dependencias (por si más adelante agregas npm)
+node_modules/
+
+# Archivos temporales
+*.log
+.tmp/
