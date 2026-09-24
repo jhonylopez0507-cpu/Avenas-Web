@@ -8,7 +8,7 @@
 
 Aplicación web interactiva para digitalizar la venta de avenas artesanales orientadas a clientes de gimnasio, optimizando el flujo de pedidos mediante WhatsApp.
 
-🔗 **[Ver proyecto en vivo](https://jhonylopez0507-cpu.github.io/avena-trasnochada/)**
+🔗 **[Ver proyecto en vivo](https://jhonylopez0507-cpu.github.io/Avenas-Web/)**
 
 ---
 
@@ -60,7 +60,7 @@ Este sitio fue diseñado y programado desde cero, tomando como referencia estruc
 ## 📂 Estructura del proyecto
 
 ```
-avena-trasnochada/
+Avenas-Web/
 ├── .editorconfig    # Reglas de formato consistentes entre editores
 ├── .gitignore       # Archivos y carpetas que Git debe ignorar
 ├── .prettierignore  # Archivos que Prettier no debe formatear
@@ -76,10 +76,10 @@ avena-trasnochada/
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/jhonylopez0507-cpu/avena-trasnochada.git
+git clone https://github.com/jhonylopez0507-cpu/Avenas-Web.git
 
 # Entra a la carpeta
-cd avena-trasnochada
+cd Avenas-Web
 
 # Ábrelo con Live Server (VS Code) o simplemente abre index.html en tu navegador
 ```
