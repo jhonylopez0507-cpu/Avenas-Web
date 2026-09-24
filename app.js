@@ -55,10 +55,10 @@ function agregarAvenaAlCarrito(boton, sabor, precioBase) {
   abrirCarrito();
 }
 
-// 2. Agregar un plan semanal al carrito
+// 2. Agregar un plan (semanal, quincenal o mensual) al carrito
 function agregarPlanAlCarrito(boton, nombrePlan, precioBase) {
   const contenedorExtras = boton
-    .closest(".plan-texto")
+    .closest(".tarjeta-plan")
     .querySelector(".extras");
   const extras = leerExtrasSeleccionados(contenedorExtras);
 

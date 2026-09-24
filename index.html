@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Avenas Trasnochadas: avena preparada la noche anterior, entregada fresca en Smart Fit Tepozanes. Pide tu individual o suscríbete al plan semanal."
+      content="Avenas Trasnochadas: avena preparada la noche anterior, entregada fresca en Smart Fit Tepozanes. Pide tu individual o suscríbete a un plan semanal, quincenal o mensual."
     />
     <title>Avenas Trasnochadas - Pedidos</title>
 
@@ -544,63 +544,176 @@
         </div>
       </section>
 
-      <!-- ===== SUSCRIPCIONES (estilo franja "reservación") ===== -->
-      <section id="suscripciones" class="franja-plan">
-        <div class="plan-texto">
-          <span class="subtitulo-destacado">Plan semanal</span>
-          <h2>5 avenas, un solo pedido</h2>
-          <p>
-            Arma tu semana completa y ahorra. Renueva con tus frascos limpios y
-            obtén precio Eco-Swap.
-          </p>
-          <div class="extras">
-            <label
-              ><input
-                type="checkbox"
-                id="planExtraProteina"
-                data-extra="Proteína (promo 5x4)"
-                data-precio="100"
-              />
-              Proteína en los 5 frascos · Promo 5x4: +$100</label
-            >
-            <label
-              ><input
-                type="checkbox"
-                id="planExtraCreatina"
-                data-extra="Creatina (promo 5x4)"
-                data-precio="60"
-              />
-              Creatina en los 5 frascos · Promo 5x4: +$60</label
-            >
+      <!-- ===== SUSCRIPCIONES ===== -->
+      <section id="suscripciones">
+        <div class="franja-plan">
+          <div class="plan-texto">
+            <span class="subtitulo-destacado">Suscripciones</span>
+            <h2>Tu avena de lunes a sábado, sin pensarlo</h2>
+            <p>
+              Elige tu plan y recibe una avena por cada día que abre el
+              gimnasio. Entre más largo el plan, menos pagas por avena. Renueva
+              con tus frascos limpios y obtén precio Eco-Swap.
+            </p>
+            <p class="plan-nota">
+              Promo en extras: en cualquier plan pagas la proteína o creatina de
+              5 avenas por cada 6.
+            </p>
           </div>
-          <div class="plan-botones">
-            <button
-              class="btn-plan"
-              onclick="
-                agregarPlanAlCarrito(this, 'Suscripción nueva (5 frascos)', 350)
-              "
-            >
-              Cliente nuevo · $350 MXN
-            </button>
-            <button
-              class="btn-plan btn-plan-eco"
-              onclick="
-                agregarPlanAlCarrito(
-                  this,
-                  'Renovación Eco-Swap (5 frascos)',
-                  315,
-                )
-              "
-            >
-              Renovación Eco-Swap · $315 MXN
-            </button>
+          <div class="plan-imagen">
+            <img
+              src="img/PiñaColada1.jpeg"
+              alt="Frascos de avena listos para entrega"
+            />
           </div>
         </div>
-        <div class="plan-imagen">
-          <img
-            src="img/PiñaColada1.jpeg"
-            alt="Frascos de avena listos para entrega"
-          />
+
+        <div class="grid-planes">
+          <article class="tarjeta-plan">
+            <h3>Semanal</h3>
+            <p class="plan-cantidad">6 avenas · 1 semana</p>
+            <div class="extras">
+              <label
+                ><input
+                  type="checkbox"
+                  data-extra="Proteína (promo paga 5 de cada 6)"
+                  data-precio="125"
+                />
+                Proteína: +$125 <s>$150</s></label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-extra="Creatina (promo paga 5 de cada 6)"
+                  data-precio="75"
+                />
+                Creatina: +$75 <s>$90</s></label
+              >
+            </div>
+            <div class="plan-botones">
+              <button
+                class="btn-plan"
+                onclick="
+                  agregarPlanAlCarrito(
+                    this,
+                    'Plan Semanal nuevo (6 frascos)',
+                    420,
+                  )
+                "
+              >
+                Cliente nuevo · $420 MXN
+              </button>
+              <button
+                class="btn-plan btn-plan-eco"
+                onclick="
+                  agregarPlanAlCarrito(
+                    this,
+                    'Plan Semanal Eco-Swap (6 frascos)',
+                    378,
+                  )
+                "
+              >
+                Renovación Eco-Swap · $378 MXN
+              </button>
+            </div>
+          </article>
+          <article class="tarjeta-plan">
+            <h3>Quincenal</h3>
+            <p class="plan-cantidad">12 avenas · 2 semanas</p>
+            <div class="extras">
+              <label
+                ><input
+                  type="checkbox"
+                  data-extra="Proteína (promo paga 5 de cada 6)"
+                  data-precio="250"
+                />
+                Proteína: +$250 <s>$300</s></label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-extra="Creatina (promo paga 5 de cada 6)"
+                  data-precio="150"
+                />
+                Creatina: +$150 <s>$180</s></label
+              >
+            </div>
+            <div class="plan-botones">
+              <button
+                class="btn-plan"
+                onclick="
+                  agregarPlanAlCarrito(
+                    this,
+                    'Plan Quincenal nuevo (12 frascos)',
+                    800,
+                  )
+                "
+              >
+                Cliente nuevo · $800 MXN
+              </button>
+              <button
+                class="btn-plan btn-plan-eco"
+                onclick="
+                  agregarPlanAlCarrito(
+                    this,
+                    'Plan Quincenal Eco-Swap (12 frascos)',
+                    720,
+                  )
+                "
+              >
+                Renovación Eco-Swap · $720 MXN
+              </button>
+            </div>
+          </article>
+          <article class="tarjeta-plan destacado">
+            <span class="plan-etiqueta">Más ahorro</span>
+            <h3>Mensual</h3>
+            <p class="plan-cantidad">24 avenas · 4 semanas</p>
+            <div class="extras">
+              <label
+                ><input
+                  type="checkbox"
+                  data-extra="Proteína (promo paga 5 de cada 6)"
+                  data-precio="500"
+                />
+                Proteína: +$500 <s>$600</s></label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  data-extra="Creatina (promo paga 5 de cada 6)"
+                  data-precio="300"
+                />
+                Creatina: +$300 <s>$360</s></label
+              >
+            </div>
+            <div class="plan-botones">
+              <button
+                class="btn-plan"
+                onclick="
+                  agregarPlanAlCarrito(
+                    this,
+                    'Plan Mensual nuevo (24 frascos)',
+                    1500,
+                  )
+                "
+              >
+                Cliente nuevo · $1,500 MXN
+              </button>
+              <button
+                class="btn-plan btn-plan-eco"
+                onclick="
+                  agregarPlanAlCarrito(
+                    this,
+                    'Plan Mensual Eco-Swap (24 frascos)',
+                    1350,
+                  )
+                "
+              >
+                Renovación Eco-Swap · $1,350 MXN
+              </button>
+            </div>
+          </article>
         </div>
       </section>
     </main>
